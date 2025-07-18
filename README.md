@@ -65,13 +65,13 @@ The data pipeline is designed to be executed as a DAG (Directed Acyclic Graph) i
 
 ```mermaid
 graph TD
-    A[Raw Data (events.csv)] --> B{Preprocess Events};
-    B --> C[Preprocessed Data (preprocessed_events.parquet)];
-    D[Synthetic Data Generation] --> E[Synthetic Data (synthetic_events.parquet)];
-    C --> F[Data Warehouse];
-    E --> F;
-    F --> G[BI & Analytics];
-    F --> H[Machine Learning];
+    A[Raw Data events.csv] --> B[Preprocess Events]
+    B --> C[Preprocessed Data preprocessed_events.parquet]
+    D[Synthetic Data Generation] --> E[Synthetic Data synthetic_events.parquet]
+    C --> F[Data Warehouse]
+    E --> F
+    F --> G[BI & Analytics]
+    F --> H[Machine Learning]
 ```
 
 ## Getting Started
